@@ -1,0 +1,235 @@
+html, body {
+    height: 100%;
+    font-family: "Josefin Sans", sans-serif
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+    border-bottom: 1px solid #2E4949;
+}
+
+header > nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > nav > div > h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #294444;
+}
+
+header > nav > div > span {
+    font-size: xx-large;
+    padding-left: 20px;
+}
+
+header > nav > ul {
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+}
+
+header i {
+    background-color: #E3F4F4;
+    color: #3D8E8E;
+    border: 1px solid #3D8E8E;
+    border-radius: 100%;
+    padding: 7px;
+    }
+
+header i:hover {
+    background-color: #3D8E8E;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+main > div {
+    background-color: #E3F4F4;
+    width: 15%;
+    min-width: 250px;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+    width: 100%;
+    border-bottom: 1px solid #3D8E8E;
+}
+
+.ul > li  {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 50px;
+    border: 1px solid transparent;
+}
+
+ul a  {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-left: 20px;
+    color: #294444;
+    text-decoration: none;
+}
+
+.active {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #3D8E8E;
+    color: white;
+    border-radius: 50px 0px 0px 50px;
+    border: 1px solid transparent;
+} 
+
+main > div > ul > li:hover {
+    border-top: 1px solid #3D8E8E;
+    border-left: 1px solid #3D8E8E;
+    border-bottom: 1px solid #3D8E8E;
+    border-radius: 50px 0px 0px 50px;
+    cursor: pointer;
+}
+
+main > div > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+main > div > div > span {
+    display: flex;
+    width: 180px;
+    justify-content: end;
+    padding-top: 5px;
+    color: #294444;
+}
+
+.progressbar {
+    display: flex;
+    height: 20px;
+    width: 180px;
+    
+}
+
+.progressbar-filled {
+    height: 100%;
+    width: 36%;
+    background-color: #3D8E8E;
+    border-radius: 30px 0px 0px 30px;
+    border: 1px solid #3D8E8E
+}
+
+.progressbar-empty {
+    height: 100%;
+    width: 64%;
+    background-color: white;
+    border-radius: 0px 30px 30px 0px;
+    border: 1px solid #3D8E8E
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;      
+    width: 85%;
+    padding-left: 370px;
+    padding-right: 370px;
+    min-width:900px;
+}
+
+.section-desc {
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    width: 100%;
+    color: #294444;
+    font-size: x-large;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #294444;
+}
+
+
+.section-p {
+    font-weight: lighter;
+}
+
+.section-span {
+    font-weight: normal;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 280px;
+    border: 1px solid #294444;
+    border-radius: 10%;
+}
+
+.card:hover {
+    background-color: #E9ECEB;
+    cursor: pointer;
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280%;
+    font-size: 80px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    color: #294444;
+
+}
+
+.card-info span {
+    padding-left: 20px;
+    padding-bottom: 15px;   
+}
+
+.card ul {
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+    padding-right: 10px;
+}
+
