@@ -1,0 +1,16 @@
+@import "../../../variables.scss";
+:host
+{
+    position: absolute;
+    top: 90px;
+    right: 5px;
+    z-index: 1200;
+    border-radius: 5px;
+}
+
+.toast
+{
+    margin: 10px;
+    background-color: $main-color;
+    border-radius: 5px;
+}

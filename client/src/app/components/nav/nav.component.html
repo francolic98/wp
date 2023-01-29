@@ -1,0 +1,40 @@
+<div class="navbar-container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top transparent">
+        <div class="container-md full-transparent">
+
+            <a class="navbar-brand" href="#">
+                <h1 class="mb-0" id="main-title">mycloud <span
+                        style="margin-left: 10px; font-size: xx-large;">💾</span>
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" (click)="isMenuCollapsed = !isMenuCollapsed">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse full-transparent" id="navbarToggler" [ngbCollapse]="isMenuCollapsed">
+                <ul class="navbar-nav mb-0 mb-lg-0 full-transparent">
+                    <li class="nav-item page-link">
+                        <a routerLinkActive="active" routerLink="/files" (click)="isMenuCollapsed = true" id="link-files" class="nav-link" aria-current="page">Files</a>
+                    </li>
+                    <!--<li class="nav-item page-link">
+                        <a routerLinkActive="active" routerLink="/shared" (click)="isMenuCollapsed = true" id="link-shared" class="nav-link" href="#">Shared</a>
+                    </li>
+                    <li class="nav-item page-link">
+                        <a routerLinkActive="active" routerLink="/pinned" (click)="isMenuCollapsed = true" id="link-pinned" class="nav-link" href="#" tabindex="-1" aria-disabled="true">Pinned</a>
+                    </li>
+                    <li class="nav-item page-link">
+                        <a routerLinkActive="active" routerLink="/trash" (click)="isMenuCollapsed = true" id="link-trash" class="nav-link" href="#" tabindex="-1" aria-disabled="true">Trash</a>
+                    </li>-->
+                    <li class="nav-item page-link">
+                        <a routerLinkActive="active" routerLink="/newfile" (click)="isMenuCollapsed = true" id="link-newfile" class="nav-link" aria-current="page">New File</a>
+                    </li>
+                </ul>
+                <ul class="ms-auto navbar-nav mb-0 mb-lg-0 full-transparent">
+                    <li class="nav-item">
+                        <a class="mb-0 nav-link nav-link-nohover" href="#"><fa-icon [icon]="userIcon"></fa-icon> {{ (User$ | async)?.Username }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
